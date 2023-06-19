@@ -1,0 +1,10 @@
+.doctor-nav .active {
+    background: #3A4256;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 4px;
+}
+/* .doctor-nav ul a {
+    padding: 10px 25px;
+
+} */
