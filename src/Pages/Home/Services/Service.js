@@ -1,15 +1,15 @@
 import React from 'react';
 
-const Service = ({service}) => {
+const Service = ({ service }) => {
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <div className="card-body">
-                    <h2 className="card-title">{service.title}</h2>
+            <div className="card lg:max-w-lg bg-base-100 shadow-xl p-[40px]">
+                <figure className="px-10 pt-10">
+                    <img src={service.serviceIcon} alt="Shoes" className="rounded-xl" />
+                </figure>
+                <div className="card-body items-center text-center">
+                    <h2 className="card-title text-accent">{service.title}</h2>
                     <p>{service.description}</p>
-                    <div className="card-actions justify-end">
-                    <img src={service.img} alt="" />
-                    </div>
                 </div>
             </div>
         </div>

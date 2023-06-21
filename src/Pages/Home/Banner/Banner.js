@@ -13,7 +13,7 @@ const Banner = () => {
                 <div className="banner-info">
                     <h1 className=' text-accent text-[46px] leading-[52px] font-bold pb-4'>Your New Smile Starts Here</h1>
                     <p className=' lg:w-5/6 pb-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
-                    <button className="btn btn-active bg-gradient-to-r from-primary to-secondary text-white border-none">Primary</button>
+                    <button className="btn btn-active bg-gradient-to-r from-primary to-secondary text-white border-none">GET STARTED</button>
                 </div>
             </div>
             <Info></Info>

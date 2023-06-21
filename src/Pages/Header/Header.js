@@ -6,14 +6,14 @@ import './Header.css'
 const Header = ({ children }) => {
     const menuFull = <>
         <NavLink to='/home'>Home</NavLink>
-        <NavLink to='/about'>About</NavLink>
+        {/* <NavLink to='/about'>About</NavLink> */}
         <NavLink to='/appointment'>Appointment</NavLink>
         <NavLink to='/reviews'>Reviews</NavLink>
         <NavLink to='/contact'>Contact Us</NavLink>
         <NavLink to='/login'>Login</NavLink>
     </>
     return (
-        <nav className=' bg-white fixed mx-auto w-screen z-10'>
+        <nav className=' bg-white sticky top-0 mx-auto w-full z-10'>
             <div className='container mx-auto'>
                 <div className="drawer-end \">
                     <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -38,7 +38,7 @@ const Header = ({ children }) => {
                     </div>
                     <div className="drawer-side">
                         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-                        <ul className="doctor-nav menu p-4 w-80 h-full bg-white space-y-5">
+                        <ul className="doctor-nav menu p-4 w-[200px] h-full bg-white space-y-5">
                             {menuFull}
                         </ul>
                     </div>
