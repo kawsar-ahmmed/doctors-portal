@@ -1,17 +1,18 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 
 const Login = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
         console.log(data);
     }
     return (
         <section className='container mx-auto'>
-            <div>
-                <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col items-center h-screen justify-center'>
-                    <h2 className='text-center text-4xl'>Login</h2>
+            <div className='flex flex-col items-center h-screen justify-center'>
+                <form onSubmit={handleSubmit(onSubmit)}>
+                    <h2 className='text-accent text-center text-4xl'>Login</h2>
                     <div className=''>
                         <label className="label">
                             <span className="label-text">Email</span>
@@ -36,6 +37,7 @@ const Login = () => {
                     </div>
                     <input className='w-80 btn mt-8 bg-accent' type="submit" />
                 </form>
+                <SocialLogin></SocialLogin>
             </div>
         </section>
     );
