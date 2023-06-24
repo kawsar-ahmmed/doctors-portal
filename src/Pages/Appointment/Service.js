@@ -1,8 +1,9 @@
 import React from 'react';
 import './Appointment.css';
 
-const Service = ({ service, setTreatment }) => {
+const Service = ({ service, setTreatment, date }) => {
     const { name, slots } = service;
+    console.log(date)
 
 
     return (
@@ -22,13 +23,13 @@ const Service = ({ service, setTreatment }) => {
                 </button>
 
                 <div className="card-actions justify-center">
-                    <label
+                    <label 
+                        
                         onClick={() => {
                             setTreatment(service);
-
                         }}
                         disabled={slots.length === 0}
-                        className='btn btn-secondary' htmlFor="my_modal_6" >Book Appointment</label>
+                        className='btn btn-primary text-neutral' htmlFor="my_modal_6" >Book Appointment</label>
                 </div>
 
             </div>
